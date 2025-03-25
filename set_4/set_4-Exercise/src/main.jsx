@@ -8,9 +8,10 @@ import ItemList from './Q3/itemList.jsx'
 import TodoItem from './Q5/todoItems.jsx'
 import Book from './Q6/Book.jsx'
 import BookGenre from './Q6/BookGenre.jsx'
+import Game from './Q7/Game.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BookGenre/>
+    <Game/>
   </StrictMode>,
 )

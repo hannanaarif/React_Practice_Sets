@@ -1,0 +1,35 @@
+/* Grid Container */
+.page-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Individual Card */
+  .page-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Image Styling */
+  .page-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Text Styling */
+  .page-title {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .page-meta {
+    font-size: 14px;
+    color: gray;
+  }
+  
