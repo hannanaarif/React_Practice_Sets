@@ -82,8 +82,16 @@ const StoreProvider = ({children}) => {
     setWishlist(prev => [...prev, product]);
   };
 
+  const RemoveCart = (id) => {
+    setCart(prev => prev.filter(item => item.id !== id));
+  };
+
+  const RemoveWishlist = (id) => {
+    setWishlist(prev => prev.filter(item => item.id !== id));
+  };
+
   return (
-    <StoreContext.Provider value={{ products, cart, wishlist, addToCart, addToWishlist }}>
+    <StoreContext.Provider value={{ products, cart, wishlist, addToCart, addToWishlist,RemoveCart,RemoveWishlist}}>
       {children}
     </StoreContext.Provider>
   );
